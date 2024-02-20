@@ -27,8 +27,6 @@ if (v <= 18) {
     console.log("inserire un voto valido");
 }
 
-
-
 let voto = 20;
 
 switch (voto) {
@@ -79,3 +77,23 @@ switch (voto) {
         console.log("inserire un voto valido");
         break;
 }
+
+//ESERCIZIO 3
+
+let temperatura = -11;
+
+if (temperatura >= 30) {
+    console.log("Lu mare, lu sole, lu ientu");
+} else if (temperatura < 20 && temperatura >0) {
+    console.log("non ci sono più le mezze stagioni");
+} else if (temperatura < 30 & temperatura > 20) {
+    console.log("mi dia una Peroni sudata");
+} else if (temperatura < 0 && temperatura > -10) {
+    console.log("non è tanto il freddo quanto l'umidità");
+} else if (temperatura < -10) {
+    console.log("copriti... ancora ti raffreddi");
+} else {
+    console.log("");
+}
+
+

@@ -27,52 +27,28 @@ if (v <= 18) {
     console.log("inserire un voto valido");
 }
 
-let voto = 20;
+let voto = 28;
 
-switch (voto) {
-    case 17:
+switch (true) {
+    case (voto <= 18):
         console.log("insufficiente");
         break;
-    case 18:
+    case (voto >= 18 && voto < 21):
         console.log("sufficiente");
         break;
-    case 19:
-        console.log("sufficiente");
-        break;
-    case 20:
-        console.log("sufficiente");
-        break;
-    case 21:
+    case (voto >= 21 && voto < 24):
         console.log("buono");
         break;
-    case 22:
-        console.log("buono");
-        break;
-    case 23:
-        console.log("buono");
-        break;
-    case 24:
+    case (voto >= 24 && voto < 27):
         console.log("distinto");
         break;
-    case 25:
-        console.log("distinto");
-        break;
-    case 26:
-        console.log("distinto");
-        break;
-    case 27:
+    case (voto >= 27 && voto <= 29):
         console.log("ottimo");
         break;
-    case 28:
-        console.log("ottimo");
-        break;
-    case 29:
-        console.log("ottimo");
-        break;
-    case 30:
+    case (voto == 30):
         console.log("eccellente");
         break;
-   
+    
     default:
         console.log("inserire un voto valido");
         break;
@@ -96,4 +72,13 @@ if (temperatura >= 30) {
     console.log("");
 }
 
+let gradi = 30;
 
+switch (gradi) {
+    case gradi >= 30 ? console.log("Lu mare, lu sole, lu ientu"):
+        console.log("Lu mare, lu sole, lu ientu"):
+        break;
+
+    default:
+        break;
+}

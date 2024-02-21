@@ -57,6 +57,7 @@ switch (true) {
 //ESERCIZIO 3
 
 let temperatura = -11;
+console.log("la temperatura indicata è " + temperatura);
 
 if (temperatura >= 30) {
     console.log("Lu mare, lu sole, lu ientu");
@@ -72,13 +73,28 @@ if (temperatura >= 30) {
     console.log("");
 }
 
-let gradi = 30;
+let gradi = -273;
+console.log("la temperatura indicata è " + gradi);
 
-switch (gradi) {
-    case gradi >= 30 ? console.log("Lu mare, lu sole, lu ientu"):
-        console.log("Lu mare, lu sole, lu ientu"):
+switch (true) {
+    case (gradi >= 30):
+        console.log("Lu mare, lu sole, lu ientu");
         break;
-
+    case (gradi < 20 && gradi >0):
+        console.log("non ci sono più le mezze stagioni");
+        break;
+    case (gradi < 30 & gradi > 20):
+        console.log("mi dia una Peroni sudata");
+        break;
+    case (gradi < -10 && gradi > -273):
+        console.log("copriti... ancora ti raffreddi");
+        break;
+    case (gradi < 0 && gradi > -10):
+        console.log("non è tanto il freddo quanto l'umidità");
+        break;
+    case (gradi == -273):
+        console.log("0 assoluto... come ci sei arrivato?");
+        break;
     default:
         break;
 }
